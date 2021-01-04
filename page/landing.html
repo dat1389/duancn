@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../css/landing-page/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="body">
+        <!-- header-->
+        <div class="header">
+            <div class="header-top">
+                <div class="header-logo"></div>
+                <div class="header-categories po-center">
+                    <h1 class="title-text text-hover">Categories</h1>
+                </div>
+                <div class="header-search">
+                    <div class="input-group">
+                        <div class="autocomplete">
+                            <input id="myInput" class="form-control" type="text" name="myCountry"
+                                placeholder="Search course here">
+                        </div>
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-buy po-center">
+                    <h1 class="title-text text-hover">Buy</h1>
+                </div>
+                <div class="header-myLearning po-center">
+                    <h1 class="title-text text-hover">My learning</h1>
+                </div>
+                <div class="header-profile" onclick="adminPage()"></div>
+            </div>
+            <div class="header-demoCourse">
+                <div class="header-demoCourse-lv1 demoCourse-text text-hover">Course lv: </div>
+                <div class="header-demoCourse-lv1 demoCourse-text text-hover">Lv1: Bronze</div>
+                <div class="header-demoCourse-lv2 demoCourse-text text-hover">Lv2: Sliver</div>
+                <div class="header-demoCourse-lv3 demoCourse-text text-hover">Lv3: Gold</div>
+                <div class="header-demoCourse-lv4 demoCourse-text text-hover">Lv4: Platinum</div>
+                <div class="header-demoCourse-lv5 demoCourse-text text-hover">Lv5: Diamond</div>
+                <div class="header-demoCourse-lv6 demoCourse-text text-hover">Lv6: Challenger</div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <!-- ads -->
+            <div class="content-ads">
+                <div> </div>
+            </div>
+            <!-- phan my learning -->
+            <div class="content-hover-div">
+                <div class="content-hover-text">
+                    <h1>
+                        My learning
+                    </h1>
+                </div>
+                <div id="my-learning" class="carousel slide" data-interval="false" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner slide">
+                        <div class="carousel-item active">
+
+                            <div class="hoverList-1 hoverList-item">
+                                <div class="learn-bg">
+                                    <div>
+                                        <!-- Button to Open the Modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#myModal">
+                                            Click to continue
+                                        </button>
+                                        <!-- The Modal -->
+                                        <div class="modal fade" id="myModal">
+                                            <div class="modal-dialog modal-dialog-centered modal-xl">
+                                                <div class="modal-content">
+                                                    <!-- Modal Header -->
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Video</h4>
+                                                        <button type="button" class="close"
+                                                            data-dismiss="modal">&times;</button>
+                                                    </div>
+                                                    <!-- Modal body -->
+                                                    <div class="modal-body">
+
+                                                        <div class="video-container">
+                                                            <iframe class="video"
+                                                                src="https://www.youtube.com/embed/RcnksOUugcA"
+                                                                allowfullscreen></iframe>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal footer -->
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="learn-caption ">
+                                            <h3>Lv1: Bronze</h3>
+                                            <p>Unit 1: Animal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="hoverList-2 hoverList-item"></div>
+                            <div class="carousel-caption">
+                                <h3>Lv1 Bronze</h3>
+                                <p>Unit 2: car </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="hoverList-2 hoverList-item">course 1</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#my-learning" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#my-learning" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- phan recomend-->
+            <div class="content-recomendCourse">
+                <div class="content-hover-text">
+                    <h1>
+                        Recomend course
+                    </h1>
+                </div>
+
+                <div id="recomend-course" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="hoverList-2 hoverList-item">course 1</div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="hoverList-2 hoverList-item">course 1</div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="hoverList-2 hoverList-item">course 1</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#recomend-course" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#recomend-course" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row text-center text-xs-center text-sm-left text-md-left">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Bùi Tiến Đạt</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Đào Tiến Dũng</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Nguyễn Quý Thịnh</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                        <p class="h6">© All right Reversed.<a class="text-green ml-2" href="#" target="_blank">Dự án
+                                công nghệ 2020</a></p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/search.js" type="text/javascript"></script>
+    <script src="../js/common.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
