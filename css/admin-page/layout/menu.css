@@ -12,7 +12,9 @@
         .menu .menu-item:hover {
             background-color: #e5e5e5;
         }
-
+        .menu .menu-item:active{
+            background-color:cadetblue;
+        }
         .menu .menu-item .menu-item-icon {
             margin-left: 20px;
             width: 24px;
