@@ -2,6 +2,14 @@ function adminPage()
 {
     location.href="admin.html";
 }
+function adminCoursePage()
+{
+    location.href="courseAdmin.html"
+}
+function userAdminPage()
+{
+    location.href="userAdmin.html"
+}
 function initEvens() {
     // Gán các sự kiện:
     $('#btnAdd').click(function () {
